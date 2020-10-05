@@ -1,23 +1,27 @@
 # TIL.code
 
 https://img.shields.io/github/languages/count/two-jay/TIL.code
+
 https://img.shields.io/github/languages/top/two-jay/TIL.code
+
 https://img.shields.io/github/commit-activity/w/two-jay/TIL.code
+
 https://img.shields.io/github/last-commit/two-jay/TIL.code
 
 https://img.shields.io/badge/Node.js-gray?logo=Node.js&logoColor=#339933?style=for-the-badge
+
 https://img.shields.io/badge/javascript-gray?logo=JavaScript&logoColor=#339933?style=for-the-badge
+
 https://img.shields.io/badge/html5-gray?logo=html5&logoColor=#339933?style=for-the-badge
+
 https://img.shields.io/badge/CSS%203-gray?logo=CSS3&logoColor=#1572B6?style=for-the-badge
+
 https://img.shields.io/badge/Python-gray?logo=Python&logoColor=#3776AB?style=for-the-badge
 
 날마다 익힌 코드를 정리하는 레포입니다.
-&nbsp
+
 ***
-&nbsp
-&nbsp
-***
-&nbsp
+
 # Markdown rules
 <details>
 <summary>해당 레포의 마크다운 룰을 보시려면 왼쪽의 화살표를 클릭해주세요.</summary>
@@ -63,8 +67,8 @@ https://img.shields.io/badge/Python-gray?logo=Python&logoColor=#3776AB?style=for
 ## 구분선
 
 문단 내에 구분선을 놓을 시에는 아래의 규칙을 따른다.
-- 구분선 위아래에 \&nbsp
 - 구분선은 `***`로 기입
+- 상하로 2줄 공백 처리
 
 
 ## 이미지
