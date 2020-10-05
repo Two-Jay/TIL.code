@@ -81,10 +81,9 @@ https://img.shields.io/badge/Python-gray?logo=Python&logoColor=#3776AB?style=for
 
 </div>
 </details>
-&nbsp
-***
-&nbsp
+
 # File&forder rules
+
 <details>
 <summary>해당 레포의 마크다운 룰을 보시려면 왼쪽의 화살표를 클릭해주세요.</summary>
 <div markdown="1">
