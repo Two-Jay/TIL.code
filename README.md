@@ -1,10 +1,9 @@
-# TIL.code  ![GitHub used languages](https://img.shields.io/github/languages/count/two-jay/TIL.code)  ![GitHub top languages](https://img.shields.io/github/languages/top/two-jay/TIL.code)  ![GitHub commit activity](https://img.shields.io/github/commit-activity/w/Two-jay/TIL.code)  ![GitHub last commit](https://img.shields.io/github/last-commit/two-jay/TIL.code)
+# TIL.code  ![GitHub used languages](https://img.shields.io/github/languages/count/two-jay/TIL.code) ![GitHub top languages](https://img.shields.io/github/languages/top/two-jay/TIL.code) ![GitHub commit activity](https://img.shields.io/github/commit-activity/w/Two-jay/TIL.code) ![GitHub last commit](https://img.shields.io/github/last-commit/two-jay/TIL.code)
 ***
 ![Node.js Badge](https://img.shields.io/badge/Node.js-gray?logo=Node.js&logoColor=#339933?style=for-the-badge) ![Javascript Badge](https://img.shields.io/badge/javascript-gray?logo=JavaScript&logoColor=#339933?style=for-the-badge) ![Html Badge](https://img.shields.io/badge/html5-gray?logo=html5&logoColor=#339933?style=for-the-badge) ![css Badge](https://img.shields.io/badge/CSS%203-gray?logo=CSS3&logoColor=#1572B6?style=for-the-badge) ![Python Badge](https://img.shields.io/badge/Python-gray?logo=Python&logoColor=#3776AB?style=for-the-badge)
 
 날마다 익힌 코드를 정리하는 레포입니다.
 
-***
 
 # Markdown rules
 <details>
