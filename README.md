@@ -1,12 +1,12 @@
 # TIL.code
 
-![[count](https://img.shields.io/github/languages/count/two-jay/TIL.code)]()
+![](https://img.shields.io/github/languages/count/two-jay/TIL.code)
 
 https://img.shields.io/github/languages/top/two-jay/TIL.code
 
 https://img.shields.io/github/commit-activity/w/two-jay/TIL.code
 
-https://img.shields.io/github/last-commit/two-jay/TIL.code
+![GitHub last commit](https://img.shields.io/github/last-commit/two-jay/TIL.code)
 
 https://img.shields.io/badge/Node.js-gray?logo=Node.js&logoColor=#339933?style=for-the-badge
 
