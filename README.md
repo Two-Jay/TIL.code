@@ -1,6 +1,6 @@
 # TIL.code
 
-https://img.shields.io/github/languages/count/two-jay/TIL.code
+![https://img.shields.io/github/languages/count/two-jay/TIL.code]()
 
 https://img.shields.io/github/languages/top/two-jay/TIL.code
 
