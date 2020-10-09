@@ -48,6 +48,7 @@
 #  zfill() -  Fills the string with a specified number of 0 values at the beginning
 ###
 
+
 ***
 
 # capitalize() - 문자열의 첫 번째 문자를 대문자로 바꾼다.
@@ -62,6 +63,7 @@ def my_capitalize(string):
     if ord(zeroth_char) >= 97 and ord(zeroth_char) <= 122:
         zeroth_char = chr(ord(zeroth_char) - 32)
     return zeroth_char + string[1:]
+
 
 ***
 
@@ -83,3 +85,112 @@ print(x) # hello, and welcome to my world!
 #         if ord(string[i]) >= 65 and ord(string[i]) >= 90:
 #             result.join(char(ord(string[i])+32))\
 #     return result
+
+
+***
+
+#  string.startswith(<string>) - 대상 string이 <string>으로 시작된다면 True를, 그렇지 않다면 False를 반환한다.
+
+
+txt = "superman"
+print(txt.startswith("s")) # True
+print(txt.startswith("a")) # False
+print(txt.startswith("super")) # True
+
+
+# my implement of this method
+
+def my_startsWith(string1, string2):
+    target = string1[0:len(string2)-1]
+    for i in range(len(target)-1):
+        if string1[i] != string2[i]:
+            return False
+    return True
+
+
+***
+
+
+#  string.split(<string>) - 매개변수로 주어진 문자열을 기준으로 문자열을 분리하여 리스트로 반환합니다.
+#           매개변수로 입력하지 않을 시에는 ""(공백)을 기준으로 분리한다.
+
+langs = "Korean, English, Arabic, Javascript, Python"
+langs_list = langs.split(",")
+print(langs_list) # ['Korean', ' English', ' Arabic', ' Javascript', ' Python']
+
+intro = "Hi, this is Aiden."
+print(intro.split()) # ['Hi,', 'this', 'is', 'Aiden.']
+
+
+def my_split(string, delimiter):
+
+    result_list = []
+
+    if not delimiter:
+        raise ValueError("Empty Separator")
+    if not string:
+        return [string]
+
+    start = 0
+    for index, char in enumerate(string):
+        if char == delimiter:
+            result_list.append(string[start:index])
+            start = index + 1
+    if start == 0:
+        return [string]
+    result_list.append(string[start:index + 1])
+    
+    return result_list
+
+
+***
+
+#  string.upper() - 대상 문자열의 소문자를 모두 대문자로 치환하여 반환한다.
+#  string.lower() - 대상 문자열의 대문자를 모두 소문자로 치환하여 반환한다.
+#           위의 메소드는 Immutable하다! 즉, 대상 문자열을 직접 바꾸지 아니한다.
+
+
+intro = "Hello, this is Aiden"
+print(intro.upper()) # HELLO, THIS IS AIDEN
+print(intro.lower()) # hello, this is aiden
+print(intro) # Hello, this is Aiden
+
+
+def my_upper(string):
+    splited_list = list(string)
+    for i in range(len(splited_list)):
+        if ord(splited_list[i]) >= 97 and ord(splited_list[i]) <= 122:
+            splited_list[i] = chr((ord(splited_list[i])-32))
+    return "".join(splited_list)
+
+def my_lower(string):
+    splited_list = list(string)
+    for i in range(len(splited_list)):
+        if ord(splited_list[i]) >= 65 and ord(splited_list[i]) <= 90:
+            splited_list[i] = chr((ord(splited_list[i])+32))
+    return "".join(splited_list)
+
+
+***
+
+#  string.replace(<string1>, <string2>) - 대상 문자열에서 대상 문자 <string1>을 찾아서 <string2>로 대체한다.
+#           2번째 매개변수를 주지 않았다면, ""(공백)을 기본값으로 한다.
+#           위의 메소드는 Immutable하다! 즉, 대상 문자열을 직접 바꾸지 아니한다.
+    
+
+intro = "제 이름은 Aiden입니다."
+print(intro.replace("Aiden", "김정준")) # 제 이름은 김정준입니다.
+# 두번째 파라미터를 ""로 주면 대상 문자열을 삭제할 수도 있다.
+
+intro = "제 이름은 Aiden입니다."
+print(intro.replace("Aiden", "")) # 제 이름은 입니다.
+print(intro.replace(" ", "")) # 제이름은Aiden입니다. | 띄어쓰기 삭제!
+print(intro) # 제 이름은 Aiden입니다.
+
+# 리스트에 있는 요소들의 느낌표, 작은따옴표, 쉼표를 제거하는 함수
+def remove_special_characters(text):
+    processed_text = []
+    for i in text:
+        target = i.replace(",","").replace("!","").replace("'","")
+        processed_text.append(target)
+    return processed_text
