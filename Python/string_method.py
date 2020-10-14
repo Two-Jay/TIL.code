@@ -194,3 +194,9 @@ def remove_special_characters(text):
         target = i.replace(",","").replace("!","").replace("'","")
         processed_text.append(target)
     return processed_text
+
+
+***
+
+#  strip() -  문자열 내에서 불필요한 공백문자를 없애어 준다.
+#         - /n 
