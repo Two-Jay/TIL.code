@@ -13,20 +13,17 @@ print(person['name']) # 'Michael'
 
 
 
-"""
-값 추가하기 -  Dict_name['new_key'] = 'New Value'
-"""
+
+# 값 추가하기 -  Dict_name['new_key'] = 'New Value'
 
 person = {'name' : 'Michael', 'age': 10}
 person['job'] = 'coding'
-
 print(person['job']) # 'coding'
 
 
 
-"""
-값 삭제하기 -  del Dict_name['new_key']
-"""
+
+# 값 삭제하기 -  del Dict_name['new_key']
 
 person = {'name' : 'Michael', 'age': 10}
 del person['age']
@@ -34,9 +31,9 @@ del person['age']
 print(person) # {'name' : 'Michael'}
 print(person['age']) # KeyError: 'age'
 
-딕셔너리 관련 함수들
-딕셔너리도 리스트와 스트링처럼 빌트인 함수들을 지원한다. 여기서는 대표적인 함수인 keys / values / items / clear / get / in에 대해서 알아보자.
-
+###
+# 딕셔너리 관련 함수들
+###
 
 """
 1. keys - 대상 딕셔너리의 Key만을 모아서 dict_keys 객체로 돌려준다.
@@ -44,7 +41,9 @@ print(person['age']) # KeyError: 'age'
 dict={"Key1":"Value1", "Key2":"Value2", "Key3":"Value3"}
 dict.keys() #dict_keys(['Key1', 'Key2', 'Key3']) 
 
-* 파이선 2.7버전 까지는 dict_keys 객체 대신에 리스트로 돌려주었다. 하지만 리스트로 돌려주기 위해서는 메모리 낭비가 발생되는데, 이런 이슈를 해결하기 위해 파이썬 3.0 이후 버전 부터 dict_keys 객체로 돌려주게 되었다. dict_keys / dict_values / dict_items 등은 리스트로 굳이 반환하지 않더라도 iterable하기에 for-loop와 같은 반복구분을 실행할 수 있다.
+* 파이선 2.7버전 까지는 dict_keys 객체 대신에 리스트로 돌려주었다. 하지만 리스트로 돌려주기 위해서는 메모리 낭비가 발생되는데,
+* 이런 이슈를 해결하기 위해 파이썬 3.0 이후 버전 부터 dict_keys 객체로 돌려주게 되었다.
+* dict_keys / dict_values / dict_items 등은 리스트로 굳이 반환하지 않더라도 iterable하기에 for-loop와 같은 반복구분을 실행할 수 있다.
 
 만일 list로 반환되는 키 리스트가 필요하다면 아래와 같이 형변환을 하여 활용하면 된다.
 

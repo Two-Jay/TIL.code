@@ -199,4 +199,6 @@ def remove_special_characters(text):
 ***
 
 #  strip() -  문자열 내에서 불필요한 공백문자를 없애어 준다.
-#         - /n 
+#         - /n 이나 /t와 같은 공백처리도 제거하여 준다.
+
+
